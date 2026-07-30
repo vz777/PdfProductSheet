@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="http://thelia.net/schema/dic/module"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://thelia.net/schema/dic/module http://thelia.net/schema/dic/module/module-2_2.xsd">
+    <fullnamespace>PdfProductSheet\PdfProductSheet</fullnamespace>
+
+    <descriptive locale="fr_FR">
+        <title>Fiches produit PDF</title>
+        <description>Génération de fiches produit PDF via Dompdf, avec template HTML/CSS personnalisable (remplace le pipeline TCPDF du core).</description>
+    </descriptive>
+    <descriptive locale="en_US">
+        <title>Product PDF sheets</title>
+        <description>Product PDF sheet generation using Dompdf, with a fully customizable HTML/CSS template (replaces the core TCPDF pipeline).</description>
+    </descriptive>
+
+    <languages>
+        <language>fr_FR</language>
+        <language>en_US</language>
+    </languages>
+
+    <version>1.0.0</version>
+
+    <authors>
+        <author>
+            <name>Vincent Bourbon</name>
+            <email>dev@vincentbourbon.fr</email>
+        </author>
+    </authors>
+
+    <type>classic</type>
+    <thelia>2.5.0</thelia>
+    <stability>prod</stability>
+    <mandatory>0</mandatory>
+    <hidden>0</hidden>
+</module>

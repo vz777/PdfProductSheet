@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="pdfproductsheet.getpdf" path="/getpdf/{template}/{filename}">
+        <default key="_controller">PdfProductSheet\Controller\PdfController::generateAction</default>
+        <requirement key="template">[^/]+</requirement>
+        <requirement key="filename">[^/]+</requirement>
+        <requirement key="_method">GET</requirement>
+    </route>
+
+    <route id="pdfproductsheet.viewpdf" path="/viewpdf/{template}/{filename}">
+        <default key="_controller">PdfProductSheet\Controller\PdfController::generateAction</default>
+        <requirement key="template">[^/]+</requirement>
+        <requirement key="filename">[^/]+</requirement>
+        <requirement key="_method">GET</requirement>
+    </route>
+
+</routes>
